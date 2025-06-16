@@ -23,6 +23,10 @@ with sync_playwright() as playwright:
     registration_button.click()
 
     # Сохранить состояние браузера
+    dashboard_toolbar_title = page.get_by_test_id("dashboard-toolbar-title-text")
+    expect(page).to_have_url("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/dashboard")
+    expect(dashboard_toolbar_title).to_be_visible()
+    expect(dashboard_toolbar_title).to_have_text("Dashboard")
     context.storage_state(path="browser-state.json")
 
 with sync_playwright() as playwright:
