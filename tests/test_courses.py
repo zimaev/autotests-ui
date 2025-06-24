@@ -19,3 +19,15 @@ def test_empty_courses_list(chromium_page_with_state: Page):
     expect(empty_view_title).to_have_text('There is no results')
     expect(empty_view_description).to_be_visible()
     expect(empty_view_description).to_have_text('Results from the load test pipeline will be displayed here')
+
+
+@pytest.mark.parametrize(
+    "input_value",
+    [
+        pytest.param(1, marks=pytest.mark.xfail(reason="Known issue with 1")),
+        2,
+        pytest.param(3, marks=pytest.mark.skip(reason="Feature not implemented for 3")),
+    ]
+)
+def test_function(input_value):
+    assert input_value != 1
