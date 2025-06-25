@@ -1,5 +1,6 @@
 import pytest
 from playwright.sync_api import expect, Page
+from pathlib import Path
 
 from pages.courses_list_page import CoursesListPage
 from pages.create_course_page import CreateCoursePage
@@ -58,7 +59,8 @@ def test_create_courses(courses_list_page: CoursesListPage, create_course_page: 
     create_course_page.check_visible_exercises_empty_view()
 
     # Загрузить изображение для превью курс
-    create_course_page.upload_preview_image("../testdata/files/image.png")
+    image_path = Path(__file__).parents[1] / "testdata" / "files" / "image.png"
+    create_course_page.upload_preview_image(image_path)
 
     # Убедиться, что блок загрузки изображения отображает состояние, когда картинка успешно загружена
     create_course_page.check_visible_image_upload_view()
