@@ -7,8 +7,8 @@ from elements.Input import Input
 class LoginFormComponent(BaseComponent):
     def __init__(self, page: Page):
         super().__init__(page)
-        self.email_input = Input(page, "login-form-email-input", "Email input")
-        self.password_input = Input(page, 'login-form-password-input', "Password input")
+        self.email_input = Input(page, "login-form-email-input", "Email")
+        self.password_input = Input(page, 'login-form-password-input', "Password")
 
     def check_visible(self, email: str, password: str):
         self.email_input.check_visible()

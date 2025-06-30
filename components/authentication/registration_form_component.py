@@ -7,9 +7,9 @@ from elements.Input import Input
 class RegistrationFormComponent(BaseComponent):
     def __init__(self, page: Page):
         super().__init__(page)
-        self.email_input = Input(page, "registration-form-email-input", "Email input")
-        self.username_input = Input(page, "registration-form-username-input", "Username input")
-        self.password_input = Input(page, "registration-form-password-input", "Password input")
+        self.email_input = Input(page, "registration-form-email-input", "Email")
+        self.username_input = Input(page, "registration-form-username-input", "Username")
+        self.password_input = Input(page, "registration-form-password-input", "Password")
 
     def check_visible(self, email: str, username: str, password: str):
         self.email_input.check_have_value(email)
