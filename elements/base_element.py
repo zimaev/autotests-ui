@@ -7,7 +7,7 @@ class BaseElement:
         self.name = name
         self.locator = locator
 
-    def get_locator(self, **kwargs) -> Locator:  # объект Locator для взаимодействия с элементом
+    def get_locator(self, **kwargs) -> Locator:
         locator = self.locator.format(**kwargs)
         return self.page.get_by_test_id(locator)
 

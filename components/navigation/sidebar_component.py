@@ -8,9 +8,9 @@ class SidebarComponent(BaseComponent):
     def __init__(self, page: Page):
         super().__init__(page)
 
-        self.logout_list_item = SidebarListItemComponent(page, 'logout')
-        self.courses_list_item = SidebarListItemComponent(page, 'courses')
-        self.dashboard_list_item = SidebarListItemComponent(page, 'dashboard')
+        self.logout_list_item = SidebarListItemComponent(page, prefix='logout')
+        self.courses_list_item = SidebarListItemComponent(page, prefix='courses')
+        self.dashboard_list_item = SidebarListItemComponent(page, prefix='dashboard')
 
     def check_visible(self):
         self.logout_list_item.check_visible('Logout')
