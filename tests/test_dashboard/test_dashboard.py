@@ -12,9 +12,12 @@ from tools.allure.tags import AllureTag
 @pytest.mark.dashboard
 @pytest.mark.regression
 @allure.tag(AllureTag.REGRESSION, AllureTag.DASHBOARD)
-@allure.epic(AllureEpic.LMS) # Добавили epic
-@allure.feature(AllureFeature.DASHBOARD) # Добавили feature
-@allure.story(AllureStory.DASHBOARD) # Добавили story
+@allure.epic(AllureEpic.LMS)
+@allure.parent_suite(AllureEpic.LMS)
+@allure.feature(AllureFeature.DASHBOARD)
+@allure.suite(AllureFeature.DASHBOARD)
+@allure.story(AllureStory.DASHBOARD)
+@allure.sub_suite(AllureStory.DASHBOARD)
 class TestDashboard:
 
     @allure.title("Проверка отображение дашбордов")

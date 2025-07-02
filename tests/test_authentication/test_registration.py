@@ -14,8 +14,11 @@ from tools.allure.tags import AllureTag
 @pytest.mark.registration
 @allure.tag(AllureTag.REGRESSION, AllureTag.REGISTRATION)
 @allure.epic(AllureEpic.LMS)
+@allure.parent_suite(AllureEpic.LMS)
 @allure.feature(AllureFeature.AUTHENTICATION)
+@allure.suite(AllureFeature.AUTHENTICATION)
 @allure.story(AllureStory.REGISTRATION)
+@allure.sub_suite(AllureStory.REGISTRATION)
 class TestRegistration:
 
     @allure.severity(Severity.CRITICAL)
