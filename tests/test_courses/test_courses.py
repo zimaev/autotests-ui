@@ -1,14 +1,27 @@
+import allure
 import pytest
 from pathlib import Path
 
+from allure_commons.types import Severity
+
 from pages.courses.courses_list_page import CoursesListPage
 from pages.courses.create_course_page import CreateCoursePage
+from tools.allure.epics import AllureEpic
+from tools.allure.features import AllureFeature
+from tools.allure.stories import AllureStory
+from tools.allure.tags import AllureTag
 
 
 @pytest.mark.courses
 @pytest.mark.regression
+@allure.tag(AllureTag.REGRESSION, AllureTag.COURSES)
+@allure.epic(AllureEpic.LMS)  # Добавили epic
+@allure.feature(AllureFeature.COURSES)  # Добавили feature
+@allure.story(AllureStory.COURSES)  # Добавили story
 class TestCourses:
 
+    @allure.title("Проверка создание нового курса")
+    @allure.severity(Severity.CRITICAL)
     def test_create_courses(self, courses_list_page: CoursesListPage, create_course_page: CreateCoursePage):
         # Открыть страницу https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses/create.
         courses_list_page.visit("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses/create")
@@ -61,6 +74,8 @@ class TestCourses:
                                                     min_score="10",
                                                     estimated_time="2 weeks")
 
+    @allure.title("Проверка отображение пустого списка курсов")
+    @allure.severity(Severity.NORMAL)
     def test_empty_courses_list(self, courses_list_page: CoursesListPage):
         """
         Отображение компонента Navbar - проверяет, что компонент Navbar корректно отображается на странице
@@ -75,6 +90,8 @@ class TestCourses:
         courses_list_page.toolbar_view.check_visible()
         courses_list_page.check_visible_empty_view()
 
+    @allure.severity(Severity.CRITICAL)
+    @allure.title("Проверка редактирование курса")
     def test_edit_course(self, courses_list_page: CoursesListPage, create_course_page: CreateCoursePage):
         """
         Открыть страницу #/courses/create.
