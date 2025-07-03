@@ -1,3 +1,4 @@
+import allure
 from playwright.sync_api import Page
 import re
 
@@ -24,7 +25,7 @@ class LoginPage(BasePage):
         self.registration_link.click()
         self.check_current_url(re.compile(r".*/#/auth/registration"))
 
+    @allure.step("Проверяю видимость алерта о некорректно логине или пароле")
     def check_visible_wrong_email_or_password_alert(self):
         self.wrong_email_or_password_alert.check_visible()
         self.wrong_email_or_password_alert.check_have_text("Wrong email or password")
-

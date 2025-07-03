@@ -1,3 +1,4 @@
+import allure
 from playwright.sync_api import Page, expect
 
 from components.base_component import BaseComponent
@@ -10,6 +11,7 @@ class LoginFormComponent(BaseComponent):
         self.email_input = Input(page, "login-form-email-input", "Email")
         self.password_input = Input(page, 'login-form-password-input', "Password")
 
+    @allure.step("Проверяю видимость формы авторизации")
     def check_visible(self, email: str, password: str):
         self.email_input.check_visible()
         self.password_input.check_visible()
@@ -17,6 +19,7 @@ class LoginFormComponent(BaseComponent):
         self.email_input.check_have_value(email)
         self.password_input.check_have_value(password)
 
+    @allure.step("Заполняю форму авторизации")
     def fill(self, email: str, password: str):
         self.email_input.fill(email)
         self.password_input.fill(password)
