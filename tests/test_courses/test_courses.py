@@ -1,15 +1,16 @@
 import allure
 import pytest
-from pathlib import Path
 
 from allure_commons.types import Severity
 
+from config import settings
 from pages.courses.courses_list_page import CoursesListPage
 from pages.courses.create_course_page import CreateCoursePage
 from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeature
 from tools.allure.stories import AllureStory
 from tools.allure.tags import AllureTag
+from tools.routes import AppRoute
 
 
 @pytest.mark.courses
@@ -27,7 +28,7 @@ class TestCourses:
     @allure.severity(Severity.CRITICAL)
     def test_create_courses(self, courses_list_page: CoursesListPage, create_course_page: CreateCoursePage):
         # Открыть страницу https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses/create.
-        courses_list_page.visit("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses/create")
+        courses_list_page.visit(AppRoute.COURSES_CREATE)
 
         #  Проверить наличие заголовка "Create course" Проверить, что кнопка создания курса недоступна для нажатия
         create_course_page.create_course_toolbar.check_visible(is_create_course_disabled=True)
@@ -48,8 +49,7 @@ class TestCourses:
         create_course_page.check_visible_exercises_empty_view()
 
         # Загрузить изображение для превью курс
-        image_path = Path(__file__).parents[2] / "testdata" / "files" / "image.png"
-        create_course_page.image_upload_widget.upload_preview_image(image_path)
+        create_course_page.image_upload_widget.upload_preview_image(settings.test_data.image_png_file)
 
         # Убедиться, что блок загрузки изображения отображает состояние, когда картинка успешно загружена
         create_course_page.image_upload_widget.check_visible(is_image_uploaded=True)
@@ -87,8 +87,8 @@ class TestCourses:
         Отображение кнопки создания курса - проверяет, что кнопка для создания нового курса отображается
         Отображение пустого блока с текстом "There is no results"- при отсутствии курсов отображается соответствующий блок
         """
-        courses_list_page.visit("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses")
-        courses_list_page.navbar.check_visible("username")
+        courses_list_page.visit(AppRoute.COURSES)
+        courses_list_page.navbar.check_visible(settings.test_user.username)
         courses_list_page.sidebar.check_visible()
         courses_list_page.toolbar_view.check_visible()
         courses_list_page.check_visible_empty_view()
@@ -104,9 +104,8 @@ class TestCourses:
         Изменить поля: title, estimated time, description, max score, min score и нажать на кнопку сохранения изменений.
         Проверить, что на странице /#/courses отображается карточка курса с обновленными данными.
         """
-        courses_list_page.visit("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses/create")
-        image_path = Path(__file__).parents[2] / "testdata" / "files" / "image.png"
-        create_course_page.image_upload_widget.upload_preview_image(image_path)
+        courses_list_page.visit(AppRoute.COURSES_CREATE)
+        create_course_page.image_upload_widget.upload_preview_image(settings.test_data.image_png_file)
         create_course_page.create_course_form.fill(title="Playwright",
                                                    estimated_time="2 weeks",
                                                    description="Playwright",

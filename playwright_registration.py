@@ -1,5 +1,7 @@
 from playwright.sync_api import sync_playwright, expect
 
+from config import settings
+
 with sync_playwright() as playwright:
     chromium = playwright.chromium.launch(headless=False)
     page = chromium.new_page()
@@ -13,9 +15,9 @@ with sync_playwright() as playwright:
     registration_button = page.get_by_test_id("registration-page-registration-button")
 
     # Заполнение полей Email, Username, Password
-    email_input.fill("user.name@gmail.com")
-    username_input.fill("username")
-    password_input.fill("password")
+    email_input.fill(settings.test_user.email)
+    username_input.fill(settings.test_user.username)
+    password_input.fill(settings.test_user.password)
 
     # Нажмет на кнопку "Registration"
     registration_button.click()
