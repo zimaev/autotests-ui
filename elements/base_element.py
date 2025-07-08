@@ -1,5 +1,8 @@
 import allure
 from playwright.sync_api import Page, Locator, expect
+from tools.logger import get_logger
+
+logger = get_logger("BASE_ELEMENT")
 
 
 class BaseElement:
@@ -19,16 +22,22 @@ class BaseElement:
             return self.page.get_by_test_id(locator).nth(nth)
 
     def click(self, nth: int = 0, **kwargs):
-        with allure.step(f'Клик {self.type_of} "{self.name}"'):
+        step = f'Клик {self.type_of} "{self.name}"'
+        with allure.step(step):
             locator = self.get_locator(nth, **kwargs)
+            logger.info(step)
             locator.click()
 
     def check_visible(self, nth: int = 0, **kwargs):
-        with allure.step(f'Проверяем что {self.type_of} "{self.name}" отображается'):
+        step = f'Проверяем что {self.type_of} "{self.name}" отображается'
+        with allure.step(step):
             locator = self.get_locator(nth, **kwargs)
+            logger.info(step)
             expect(locator).to_be_visible()
 
     def check_have_text(self, text: str, nth: int = 0, **kwargs):
-        with allure.step(f'Проверяем что {self.type_of} "{self.name}" имеет текст {text}'):
+        step = f'Проверяем что {self.type_of} "{self.name}" имеет текст {text}'
+        with allure.step(step):
             locator = self.get_locator(nth, **kwargs)
+            logger.info(step)
             expect(locator).to_have_text(text)

@@ -27,6 +27,7 @@ class TestAuthorization:
     @allure.tag(AllureTag.USER_LOGIN)
     @allure.title("Проверка успешной авторизации")
     @allure.severity(Severity.BLOCKER)
+    @pytest.mark.xdist_group(name="authorization-group")
     def test_successful_authorization(self,
                                       registration_page: RegistrationPage,
                                       dashboard_page: DashboardPage,
@@ -50,6 +51,7 @@ class TestAuthorization:
 
     @allure.tag(AllureTag.USER_LOGIN)
     @allure.severity(Severity.CRITICAL)
+    @pytest.mark.xdist_group(name="authorization-group")
     @pytest.mark.parametrize("email, password",
                              [
                                  ("user.name@gmail.com", "password"),

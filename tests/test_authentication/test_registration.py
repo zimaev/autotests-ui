@@ -25,6 +25,7 @@ class TestRegistration:
 
     @allure.severity(Severity.CRITICAL)
     @allure.title("Успешная регистрация")
+    @pytest.mark.xdist_group(name="authorization-group")
     def test_successful_registration(self,
                                      registration_page: RegistrationPage,
                                      dashboard_page: DashboardPage):
