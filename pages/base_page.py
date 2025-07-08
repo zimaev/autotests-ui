@@ -15,7 +15,7 @@ class BasePage:
     def visit(self, url: str):
         step = f'Открытие URL-адреса {url}'
         with allure.step(step):
-            logger.info(self)
+            logger.info(step)
             self.page.goto(url, wait_until='networkidle')
 
     def reload(self):
