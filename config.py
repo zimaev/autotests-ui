@@ -29,11 +29,12 @@ class Settings(BaseSettings):
     test_data: TestData
     videos_dir: DirectoryPath
     tracing_dir: DirectoryPath
+    allure_results_dir: DirectoryPath
     browser_state_file: FilePath
     model_config = SettingsConfigDict(
-        env_file=".env",  # Указываем, из какого файла читать настройки
-        env_file_encoding="utf-8",  # Указываем кодировку файла
-        env_nested_delimiter=".",  # Указываем разделитель для вложенных переменных
+        env_file=".env",
+        env_file_encoding="utf-8",
+        env_nested_delimiter=".",
     )
 
     def get_base_url(self) -> str:
@@ -43,15 +44,18 @@ class Settings(BaseSettings):
     def initialize(cls) -> Self:  # Возвращает экземпляр класса Settings
         videos_dir = DirectoryPath("./videos")
         tracing_dir = DirectoryPath("./tracing")
+        allure_results_dir = DirectoryPath("./allure-results")
         browser_state_file = FilePath("browser-state.json")
 
         videos_dir.mkdir(exist_ok=True)
         tracing_dir.mkdir(exist_ok=True)
+        allure_results_dir.mkdir(exist_ok=True)
         browser_state_file.touch(exist_ok=True)
 
         return Settings(
             videos_dir=videos_dir,
             tracing_dir=tracing_dir,
+            allure_results_dir=allure_results_dir,
             browser_state_file=browser_state_file
         )
 
