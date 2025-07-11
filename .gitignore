@@ -1,0 +1,20 @@
+#os
+.DS_Store
+
+# ide
+.idea
+.vscode
+
+# python
+.venv
+__pycache__
+
+# allure
+allure-results
+allure-report
+
+# testing artifacts
+*.html
+*.json
+videos
+tracing
