@@ -10,7 +10,6 @@ with sync_playwright() as playwright:
     # Открыть страницу
     page.goto("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/registration")
 
-    # Локаторы страницы регистрации
     email_input = page.get_by_test_id("registration-form-email-input").locator("input")
     username_input = page.get_by_test_id("registration-form-username-input").locator("input")
     password_input = page.get_by_test_id("registration-form-password-input").locator("input")
