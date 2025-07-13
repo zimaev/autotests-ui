@@ -1,0 +1,24 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Jul 13 17:10:46 GMT 2025","Sun Jul 13 17:10:50 GMT 2025","3864","LMS system","Authentication","Authorization","","","Проверка успешной авторизации",""
+"passed","Sun Jul 13 17:10:55 GMT 2025","Sun Jul 13 17:10:58 GMT 2025","2959","LMS system","Courses","Courses","","","Проверка создание нового курса",""
+"passed","Sun Jul 13 17:10:49 GMT 2025","Sun Jul 13 17:10:51 GMT 2025","1851","LMS system","Authentication","Authorization","","","Проверка авторизации с некорректными данными email=  , password=password",""
+"passed","Sun Jul 13 17:10:46 GMT 2025","Sun Jul 13 17:10:48 GMT 2025","2004","LMS system","Authentication","Authorization","","","Проверка авторизации с некорректными данными email=user.name@gmail.com, password=  ",""
+"passed","Sun Jul 13 17:10:57 GMT 2025","Sun Jul 13 17:10:58 GMT 2025","1728","LMS system","Courses","Courses","","","Проверка отображение пустого списка курсов","
+        Отображение компонента Navbar - проверяет, что компонент Navbar корректно отображается на странице
+        Отображение компонента Sidebar - проверяет, что компонент Sidebar виден и корректно отрисован
+        Отображение заголовка ""Courses"" - проверяет наличие и корректное отображение заголовка страницы
+        Отображение кнопки создания курса - проверяет, что кнопка для создания нового курса отображается
+        Отображение пустого блока с текстом ""There is no results""- при отсутствии курсов отображается соответствующий блок
+        "
+"passed","Sun Jul 13 17:10:51 GMT 2025","Sun Jul 13 17:10:52 GMT 2025","1356","LMS system","Authentication","Authorization","","","Проверка перехода из страницы авторизации, на страницу регистрации",""
+"passed","Sun Jul 13 17:10:59 GMT 2025","Sun Jul 13 17:11:01 GMT 2025","2010","LMS system","Dashboard","Dashboard","","","Проверка отображение дашбордов",""
+"passed","Sun Jul 13 17:10:51 GMT 2025","Sun Jul 13 17:10:52 GMT 2025","1503","LMS system","Authentication","Authorization","","","Проверка авторизации с некорректными данными email=user.name@gmail.com, password=password",""
+"passed","Sun Jul 13 17:10:53 GMT 2025","Sun Jul 13 17:10:55 GMT 2025","1921","LMS system","Authentication","Registration","","","Успешная регистрация",""
+"passed","Sun Jul 13 17:10:58 GMT 2025","Sun Jul 13 17:11:02 GMT 2025","3444","LMS system","Courses","Courses","","","Проверка редактирование курса","
+        Открыть страницу #/courses/create.
+        Заполнить форму создания курса валидными данными, загрузить изображение и нажать кнопку создания курса.
+        Проверить, что на странице /#/courses отображается карточка ранее созданного курса.
+        Через меню карточки курса нажать на кнопку ""Edit"".
+        Изменить поля: title, estimated time, description, max score, min score и нажать на кнопку сохранения изменений.
+        Проверить, что на странице /#/courses отображается карточка курса с обновленными данными.
+        "

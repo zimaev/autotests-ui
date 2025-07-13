@@ -1,0 +1,79 @@
+INFO     BASE_PAGE:base_page.py:18 Открытие URL-адреса AppRoute.REGISTRATION
+INFO     INPUT:Input.py:23 Заполнить input "Email" значением "user.name@gmail.com"
+INFO     INPUT:Input.py:23 Заполнить input "Username" значением "username"
+INFO     INPUT:Input.py:23 Заполнить input "Password" значением "password"
+INFO     INPUT:Input.py:30 Проверяю что input "Email" имеет значение "user.name@gmail.com"
+INFO     INPUT:Input.py:30 Проверяю что input "Username" имеет значение "username"
+INFO     INPUT:Input.py:30 Проверяю что input "Password" имеет значение "password"
+INFO     BUTTON:button.py:20 Проверяю, что button "Registration" активен
+INFO     BASE_ELEMENT:base_element.py:28 Клик button "Registration"
+INFO     BASE_PAGE:base_page.py:18 Открытие URL-адреса AppRoute.COURSES_CREATE
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст Create course
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что button "Create button" отображается
+INFO     BUTTON:button.py:27 Проверяю, что button "Create button" не активен
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что icon "Icon" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст Tap on "Upload image" button to select file
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Description" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Description" имеет текст Recommended file size 540X300
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что button "Upload" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что icon "Icon" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст No image selected
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Description" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Description" имеет текст Preview of selected image will be displayed here
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что input "Title" отображается
+INFO     INPUT:Input.py:30 Проверяю что input "Title" имеет значение ""
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что input "Estimate" отображается
+INFO     INPUT:Input.py:30 Проверяю что input "Estimate" имеет значение ""
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что textarea "Description" отображается
+INFO     FILE_INPUT:textarea.py:30 Проверяю что textarea "Description" имеет значение ""
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что input "Max score" отображается
+INFO     INPUT:Input.py:30 Проверяю что input "Max score" имеет значение "0"
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что input "Min score" отображается
+INFO     INPUT:Input.py:30 Проверяю что input "Min score" имеет значение "0"
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст Exercises
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что button "Create Button" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что icon "Icon" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст There is no exercises
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Description" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Description" имеет текст Click on "Create exercise" button to create new exercise
+INFO     FILE_INPUT:file_input.py:19 Установить файл file input "Upload unput" значением "testdata/files/image.png"
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что icon "Icon" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст Tap on "Upload image" button to select file
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Description" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Description" имеет текст Recommended file size 540X300
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что button "Upload" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что file input "Upload unput" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что button "Remove" отображается
+INFO     INPUT:Input.py:23 Заполнить input "Title" значением "Playwright"
+INFO     INPUT:Input.py:30 Проверяю что input "Title" имеет значение "Playwright"
+INFO     INPUT:Input.py:23 Заполнить input "Estimate" значением "2 weeks"
+INFO     INPUT:Input.py:30 Проверяю что input "Estimate" имеет значение "2 weeks"
+INFO     FILE_INPUT:textarea.py:23 Заполнить textarea "Description" значением "Playwright"
+INFO     FILE_INPUT:textarea.py:30 Проверяю что textarea "Description" имеет значение "Playwright"
+INFO     INPUT:Input.py:23 Заполнить input "Max score" значением "100"
+INFO     INPUT:Input.py:30 Проверяю что input "Max score" имеет значение "100"
+INFO     INPUT:Input.py:23 Заполнить input "Min score" значением "10"
+INFO     INPUT:Input.py:30 Проверяю что input "Min score" имеет значение "10"
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст Create course
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что button "Create button" отображается
+INFO     BUTTON:button.py:20 Проверяю, что button "Create button" активен
+INFO     BASE_ELEMENT:base_element.py:28 Клик button "Create button"
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст Courses
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что button "Create Course" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что image "Image" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст Playwright
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Max Score" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Max Score" имеет текст Max score: 100
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Min Score" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Min Score" имеет текст Min score: 10
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Estimated" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Estimated" имеет текст Estimated time: 2 weeks
