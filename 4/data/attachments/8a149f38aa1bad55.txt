@@ -1,0 +1,54 @@
+INFO     BASE_PAGE:base_page.py:18 Открытие URL-адреса AppRoute.REGISTRATION
+INFO     INPUT:Input.py:23 Заполнить input "Email" значением "user.name@gmail.com"
+INFO     INPUT:Input.py:23 Заполнить input "Username" значением "username"
+INFO     INPUT:Input.py:23 Заполнить input "Password" значением "password"
+INFO     INPUT:Input.py:30 Проверяю что input "Email" имеет значение "user.name@gmail.com"
+INFO     INPUT:Input.py:30 Проверяю что input "Username" имеет значение "username"
+INFO     INPUT:Input.py:30 Проверяю что input "Password" имеет значение "password"
+INFO     BUTTON:button.py:20 Проверяю, что button "Registration" активен
+INFO     BASE_ELEMENT:base_element.py:28 Клик button "Registration"
+INFO     BASE_PAGE:base_page.py:18 Открытие URL-адреса AppRoute.COURSES_CREATE
+INFO     FILE_INPUT:file_input.py:19 Установить файл file input "Upload unput" значением "testdata/files/image.png"
+INFO     INPUT:Input.py:23 Заполнить input "Title" значением "Playwright"
+INFO     INPUT:Input.py:30 Проверяю что input "Title" имеет значение "Playwright"
+INFO     INPUT:Input.py:23 Заполнить input "Estimate" значением "2 weeks"
+INFO     INPUT:Input.py:30 Проверяю что input "Estimate" имеет значение "2 weeks"
+INFO     FILE_INPUT:textarea.py:23 Заполнить textarea "Description" значением "Playwright"
+INFO     FILE_INPUT:textarea.py:30 Проверяю что textarea "Description" имеет значение "Playwright"
+INFO     INPUT:Input.py:23 Заполнить input "Max score" значением "100"
+INFO     INPUT:Input.py:30 Проверяю что input "Max score" имеет значение "100"
+INFO     INPUT:Input.py:23 Заполнить input "Min score" значением "10"
+INFO     INPUT:Input.py:30 Проверяю что input "Min score" имеет значение "10"
+INFO     BASE_ELEMENT:base_element.py:28 Клик button "Create button"
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что image "Image" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст Playwright
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Max Score" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Max Score" имеет текст Max score: 100
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Min Score" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Min Score" имеет текст Min score: 10
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Estimated" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Estimated" имеет текст Estimated time: 2 weeks
+INFO     BASE_ELEMENT:base_element.py:28 Клик button "Menu"
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что button "Edit" отображается
+INFO     BASE_ELEMENT:base_element.py:28 Клик button "Edit"
+INFO     INPUT:Input.py:23 Заполнить input "Title" значением "Puppeteer"
+INFO     INPUT:Input.py:30 Проверяю что input "Title" имеет значение "Puppeteer"
+INFO     INPUT:Input.py:23 Заполнить input "Estimate" значением "3 days"
+INFO     INPUT:Input.py:30 Проверяю что input "Estimate" имеет значение "3 days"
+INFO     FILE_INPUT:textarea.py:23 Заполнить textarea "Description" значением "Puppeteer"
+INFO     FILE_INPUT:textarea.py:30 Проверяю что textarea "Description" имеет значение "Puppeteer"
+INFO     INPUT:Input.py:23 Заполнить input "Max score" значением "10"
+INFO     INPUT:Input.py:30 Проверяю что input "Max score" имеет значение "10"
+INFO     INPUT:Input.py:23 Заполнить input "Min score" значением "1"
+INFO     INPUT:Input.py:30 Проверяю что input "Min score" имеет значение "1"
+INFO     BASE_ELEMENT:base_element.py:28 Клик button "Create button"
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что image "Image" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст Puppeteer
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Max Score" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Max Score" имеет текст Max score: 10
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Min Score" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Min Score" имеет текст Min score: 1
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Estimated" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Estimated" имеет текст Estimated time: 3 days

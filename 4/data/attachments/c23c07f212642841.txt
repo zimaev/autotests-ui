@@ -1,0 +1,25 @@
+INFO     BASE_PAGE:base_page.py:18 Открытие URL-адреса AppRoute.COURSES
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "App title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "App title" имеет текст UI Course
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "User welcome title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "User welcome title" имеет текст Welcome, username!
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что icon "Icon" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст Logout
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что button "Button" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что icon "Icon" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст Courses
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что button "Button" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что icon "Icon" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст Dashboard
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что button "Button" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст Courses
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что button "Create Course" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что icon "Icon" отображается
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст There is no results
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Description" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Description" имеет текст Results from the load test pipeline will be displayed here

@@ -1,0 +1,11 @@
+INFO     BASE_PAGE:base_page.py:18 Открытие URL-адреса AppRoute.REGISTRATION
+INFO     INPUT:Input.py:23 Заполнить input "Email" значением "user.name@gmail.com"
+INFO     INPUT:Input.py:23 Заполнить input "Username" значением "username"
+INFO     INPUT:Input.py:23 Заполнить input "Password" значением "password"
+INFO     INPUT:Input.py:30 Проверяю что input "Email" имеет значение "user.name@gmail.com"
+INFO     INPUT:Input.py:30 Проверяю что input "Username" имеет значение "username"
+INFO     INPUT:Input.py:30 Проверяю что input "Password" имеет значение "password"
+INFO     BUTTON:button.py:20 Проверяю, что button "Registration" активен
+INFO     BASE_ELEMENT:base_element.py:28 Клик button "Registration"
+INFO     BASE_ELEMENT:base_element.py:35 Проверяем что text "Title" отображается
+INFO     BASE_ELEMENT:base_element.py:42 Проверяем что text "Title" имеет текст Dashboard
